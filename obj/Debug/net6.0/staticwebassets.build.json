@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "dfrqkAlgHM9ZwI08ZsL/iKV2B36gj4ioiGNTtVmHD+4=",
+  "Source": "EmployeeApplication",
+  "BasePath": "_content/EmployeeApplication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EmployeeApplication/wwwroot",
+      "Source": "EmployeeApplication",
+      "ContentRoot": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/",
+      "BasePath": "_content/EmployeeApplication",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/StyleSheet.css",
+      "SourceId": "EmployeeApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/",
+      "BasePath": "_content/EmployeeApplication",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/StyleSheet.css"
+    }
+  ]
+}
