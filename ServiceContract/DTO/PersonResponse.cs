@@ -60,6 +60,21 @@ namespace ServiceContract.DTO
                 $"Email : {Email}, DateOfBith: {DateOfBirth?.ToString("yyyy dd mm")}," +
                 $"Gender : {Gender}, CountryId: {CountryId}";
         }
+
+        public PersonUpdateRequest ToPersonUpdateRequest()
+        {
+            return new PersonUpdateRequest()
+            {
+                PersonId = PersonId,
+                PersonName = PersonName,
+                Email = Email,
+                DateOfBirth = DateOfBirth,
+                Gender = (GenderOptions)Enum.Parse(typeof(GenderOptions), Gender, true),
+                CountryId = CountryId,
+                Address = Address,
+                ReceiveNewsLetters = ReceiveNewsLetters
+            };
+        }
     }
     /// <summary>
     /// An extension method to convert an object of person class into persoanResponse Class
