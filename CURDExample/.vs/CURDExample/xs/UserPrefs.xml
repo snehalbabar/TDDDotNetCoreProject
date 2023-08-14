@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{769F6868-0B6B-44CF-8F57-AA4C521741C0}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Services/PersonService.cs">
+    <Files>
+      <File FileName="Program.cs" />
+      <File FileName="../CRUDTests/UnitTest1.cs" />
+      <File FileName="../CRUDTests/MyMath.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="../ServiceContract/DTO/CountryAddRequest.cs" />
+      <File FileName="../ServiceContract/DTO/CountryResponse.cs" />
+      <File FileName="../Services/CountriesService.cs" Line="1" Column="1" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="../ServiceContract/ICountryService.cs" Line="26" Column="1" />
+      <File FileName="../ServiceContract/IPersonService.cs" Line="29" Column="44" />
+      <File FileName="../Services/PersonService.cs" Line="87" Column="1" />
+      <File FileName="../CRUDTests/PersonServiceTest.cs" Line="212" Column="59" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CURDExample" expanded="True">
+            <Node name="CRUDTests" expanded="True" />
+            <Node name="EmployeeApplication" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="Entities" expanded="True" />
+            <Node name="ServiceContract" expanded="True">
+              <Node name="DTO" expanded="True" />
+            </Node>
+            <Node name="Services" expanded="True">
+              <Node name="PersonService.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CURDExample" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EmployeeApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CRUDTests PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

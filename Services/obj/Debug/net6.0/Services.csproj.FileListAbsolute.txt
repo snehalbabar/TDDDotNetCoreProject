@@ -1,0 +1,17 @@
+/Users/snehal/Projects/Learning_Projects/Services/bin/Debug/net6.0/Services.deps.json
+/Users/snehal/Projects/Learning_Projects/Services/bin/Debug/net6.0/Services.dll
+/Users/snehal/Projects/Learning_Projects/Services/bin/Debug/net6.0/Services.pdb
+/Users/snehal/Projects/Learning_Projects/Services/bin/Debug/net6.0/Entities.dll
+/Users/snehal/Projects/Learning_Projects/Services/bin/Debug/net6.0/ServiceContract.dll
+/Users/snehal/Projects/Learning_Projects/Services/bin/Debug/net6.0/ServiceContract.pdb
+/Users/snehal/Projects/Learning_Projects/Services/bin/Debug/net6.0/Entities.pdb
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.csproj.AssemblyReference.cache
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.AssemblyInfoInputs.cache
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.AssemblyInfo.cs
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.csproj.CoreCompileInputs.cache
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.csproj.CopyComplete
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.dll
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/refint/Services.dll
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/Services.pdb
+/Users/snehal/Projects/Learning_Projects/Services/obj/Debug/net6.0/ref/Services.dll
