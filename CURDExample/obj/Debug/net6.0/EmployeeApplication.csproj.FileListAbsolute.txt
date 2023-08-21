@@ -25,3 +25,12 @@
 /Users/snehal/Projects/Learning_Projects/CURDExample/obj/Debug/net6.0/EmployeeApplication.pdb
 /Users/snehal/Projects/Learning_Projects/CURDExample/obj/Debug/net6.0/EmployeeApplication.genruntimeconfig.cache
 /Users/snehal/Projects/Learning_Projects/CURDExample/obj/Debug/net6.0/ref/EmployeeApplication.dll
+/Users/snehal/Projects/Learning_Projects/CURDExample/bin/Debug/net6.0/Entities.dll
+/Users/snehal/Projects/Learning_Projects/CURDExample/bin/Debug/net6.0/ServiceContract.dll
+/Users/snehal/Projects/Learning_Projects/CURDExample/bin/Debug/net6.0/Services.dll
+/Users/snehal/Projects/Learning_Projects/CURDExample/bin/Debug/net6.0/ServiceContract.pdb
+/Users/snehal/Projects/Learning_Projects/CURDExample/bin/Debug/net6.0/Services.pdb
+/Users/snehal/Projects/Learning_Projects/CURDExample/bin/Debug/net6.0/Entities.pdb
+/Users/snehal/Projects/Learning_Projects/CURDExample/obj/Debug/net6.0/EmployeeApplication.RazorAssemblyInfo.cache
+/Users/snehal/Projects/Learning_Projects/CURDExample/obj/Debug/net6.0/EmployeeApplication.RazorAssemblyInfo.cs
+/Users/snehal/Projects/Learning_Projects/CURDExample/obj/Debug/net6.0/EmployeeApplication.csproj.CopyComplete

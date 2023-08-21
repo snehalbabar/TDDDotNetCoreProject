@@ -1,11 +1,69 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "ServiceContract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServiceContract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceContract.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "ServiceContract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "ServiceContract/1.0.0": {
+      "type": "project",
+      "path": "../ServiceContract/ServiceContract.csproj",
+      "msbuildProject": "../ServiceContract/ServiceContract.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Entities >= 1.0.0",
+      "ServiceContract >= 1.0.0",
+      "Services >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/snehal/.nuget/packages/": {}
@@ -33,7 +91,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/snehal/Projects/Learning_Projects/Entities/Entities.csproj": {
+              "projectPath": "/Users/snehal/Projects/Learning_Projects/Entities/Entities.csproj"
+            },
+            "/Users/snehal/Projects/Learning_Projects/ServiceContract/ServiceContract.csproj": {
+              "projectPath": "/Users/snehal/Projects/Learning_Projects/ServiceContract/ServiceContract.csproj"
+            },
+            "/Users/snehal/Projects/Learning_Projects/Services/Services.csproj": {
+              "projectPath": "/Users/snehal/Projects/Learning_Projects/Services/Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

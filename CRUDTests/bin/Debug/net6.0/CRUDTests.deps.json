@@ -1094,6 +1094,11 @@
       },
       "xunit.runner.visualstudio/2.4.3": {},
       "EmployeeApplication/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0",
+          "ServiceContract": "1.0.0",
+          "Services": "1.0.0"
+        },
         "runtime": {
           "EmployeeApplication.dll": {}
         }

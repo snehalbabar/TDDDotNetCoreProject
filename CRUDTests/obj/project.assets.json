@@ -1806,6 +1806,11 @@
       "EmployeeApplication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "ServiceContract": "1.0.0",
+          "Services": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/EmployeeApplication.dll": {}
         },

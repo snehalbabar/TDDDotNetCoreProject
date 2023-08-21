@@ -116,7 +116,17 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/snehal/Projects/Learning_Projects/Entities/Entities.csproj": {
+                "projectPath": "/Users/snehal/Projects/Learning_Projects/Entities/Entities.csproj"
+              },
+              "/Users/snehal/Projects/Learning_Projects/ServiceContract/ServiceContract.csproj": {
+                "projectPath": "/Users/snehal/Projects/Learning_Projects/ServiceContract/ServiceContract.csproj"
+              },
+              "/Users/snehal/Projects/Learning_Projects/Services/Services.csproj": {
+                "projectPath": "/Users/snehal/Projects/Learning_Projects/Services/Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
