@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ServiceContract;
 using ServiceContract.DTO;
+using ServiceContract.Enums;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,8 +23,11 @@ namespace EmployeeApplication.Controllers
         // GET: /<controller>/
         [Route("persons/index")]
         [Route("/")]
-        public IActionResult Index(string searchBy,  string? searchString)
+        public IActionResult Index(string searchBy,  string? searchString,
+            string sortBy= nameof(PersonResponse.PersonName),
+            SortOrderOptions sortOrder= SortOrderOptions.ASC)
         {
+            //searching
             ViewBag.SearchFields = new Dictionary<string, string>()
             {
                 {  nameof(PersonResponse.PersonName), "Person Name" },
@@ -37,7 +41,13 @@ namespace EmployeeApplication.Controllers
             List<PersonResponse> personResponses =  _personService.GetFilteredPerson(searchBy,searchString);
             ViewBag.CurrentSearchBy = searchBy;
             ViewBag.CurrentSearchString = searchString;
-            return View(personResponses); 
+
+            //sort
+
+            List<PersonResponse> SortedpersonResponses =_personService.GetSortedPersons(personResponses, sortBy, sortOrder);
+            ViewBag.CurrentSortBy = sortBy;
+            ViewBag.CurrentSortOrder = sortOrder.ToString();
+            return View(SortedpersonResponses); 
         }
     }
 }

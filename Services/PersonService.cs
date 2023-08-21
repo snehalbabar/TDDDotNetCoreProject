@@ -47,7 +47,7 @@ namespace Services
                  new Person()
                  {
                      PersonId = Guid.Parse("6a622865-fd8e-4b71-8b40-4ec0c9b49d89"),
-                     PersonName = "Stillman",
+                     PersonName = "Zyan",
                      Email = "sbrik2@dagondesign.com",
                      Address = "00 Hagan Park",
                      CountryId = Guid.Parse("68d84e65-555f-48a2-9840-436b5c695b14"),
@@ -156,7 +156,7 @@ namespace Services
         {
             //convert person to personResponse type
             //return list them
-           return _persons.Select(x => x.ToPersonResponse()).ToList();
+           return _persons.Select(x => ConvertPersonIntoPersonResponse(x)).ToList();
         
             
         }
@@ -333,7 +333,7 @@ namespace Services
             matchingPerson.Gender = request.Gender.ToString();
             //6. Convert the person object from "person" to "personResponse" type
             //7. return PersonResponse object with update details
-            return matchingPerson.ToPersonResponse();
+            return ConvertPersonIntoPersonResponse(matchingPerson);
         }
 
         public bool DeletePerson(Guid? peronId)
