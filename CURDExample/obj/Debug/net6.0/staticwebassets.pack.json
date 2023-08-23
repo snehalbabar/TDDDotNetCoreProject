@@ -1,8 +1,16 @@
 {
   "Files": [
     {
+      "Id": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/1.png",
+      "PackagePath": "staticwebassets/1.png"
+    },
+    {
       "Id": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/StyleSheet.css",
       "PackagePath": "staticwebassets/StyleSheet.css"
+    },
+    {
+      "Id": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/jquery.min.js",
+      "PackagePath": "staticwebassets/jquery.min.js"
     },
     {
       "Id": "obj/Debug/net6.0/staticwebassets/msbuild.EmployeeApplication.Microsoft.AspNetCore.StaticWebAssets.props",

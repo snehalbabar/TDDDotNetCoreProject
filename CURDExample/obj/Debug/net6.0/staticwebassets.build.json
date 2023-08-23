@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dfrqkAlgHM9ZwI08ZsL/iKV2B36gj4ioiGNTtVmHD+4=",
+  "Hash": "o65mQEiXq0EZX7X95bixYoQyIE8xUzLNaBEH1E9FF3A=",
   "Source": "EmployeeApplication",
   "BasePath": "_content/EmployeeApplication",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/1.png",
+      "SourceId": "EmployeeApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/",
+      "BasePath": "_content/EmployeeApplication",
+      "RelativePath": "1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/1.png"
+    },
+    {
+      "Identity": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/jquery.min.js",
+      "SourceId": "EmployeeApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/",
+      "BasePath": "_content/EmployeeApplication",
+      "RelativePath": "jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/jquery.min.js"
+    },
     {
       "Identity": "/Users/snehal/Projects/Learning_Projects/CURDExample/wwwroot/StyleSheet.css",
       "SourceId": "EmployeeApplication",

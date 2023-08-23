@@ -1,35 +1,48 @@
 ﻿<Properties StartupConfiguration="{769F6868-0B6B-44CF-8F57-AA4C521741C0}|Default">
+  <MonoDevelop.Ide.ItemProperties.CRUDTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EmployeeApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.CRUDTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Services/PersonService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Persons/Delete.cshtml">
     <Files>
-      <File FileName="Program.cs" />
-      <File FileName="../CRUDTests/UnitTest1.cs" />
-      <File FileName="../CRUDTests/MyMath.cs" />
-      <File FileName="appsettings.json" />
-      <File FileName="../ServiceContract/DTO/CountryAddRequest.cs" />
-      <File FileName="../ServiceContract/DTO/CountryResponse.cs" />
-      <File FileName="../Services/CountriesService.cs" />
-      <File FileName="Properties/launchSettings.json" />
-      <File FileName="../ServiceContract/ICountryService.cs" />
-      <File FileName="../ServiceContract/IPersonService.cs" Line="60" Column="83" />
-      <File FileName="../Services/PersonService.cs" Line="250" Column="66" />
-      <File FileName="../CRUDTests/PersonServiceTest.cs" Line="553" Column="37" />
-      <File FileName="../ServiceContract/Enums/SortOrderOptions.cs" Line="11" Column="1" />
-      <File FileName="../ServiceContract/DTO/PersonUpdateRequest.cs" Line="38" Column="37" />
-      <File FileName="../ServiceContract/DTO/PersonAddRequest.cs" Line="41" Column="56" />
-      <File FileName="../ServiceContract/DTO/PersonResponse.cs" Line="68" Column="37" />
-      <File FileName="../Services/Helpers/ValidationHelper.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="9" Column="64" />
+      <File FileName="Controllers/PersonsController.cs" Line="126" Column="1" />
+      <File FileName="Views/Persons/Index.cshtml" Line="107" Column="72" />
+      <File FileName="Views/Persons/Create.cshtml" Line="128" Column="19" />
+      <File FileName="../ServiceContract/DTO/PersonAddRequest.cs" Line="20" Column="1" />
+      <File FileName="Views/_ViewImports.cshtml" Line="3" Column="43" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="16" Column="34" />
+      <File FileName="wwwroot/jquery.min.js" Line="7" Column="1" />
+      <File FileName="Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Persons/Edit.cshtml" Line="10" Column="1" />
+      <File FileName="../Services/PersonService.cs" Line="174" Column="1" />
+      <File FileName="Views/Persons/Delete.cshtml" Line="17" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CURDExample" expanded="True" />
+          <Node name="CURDExample" expanded="True">
+            <Node name="EmployeeApplication" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Persons" expanded="True">
+                  <Node name="Delete.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="ServiceContract" expanded="True">
+              <Node name="DTO" expanded="True" />
+            </Node>
+            <Node name="Services" expanded="True" />
+          </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
@@ -38,6 +51,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.EmployeeApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

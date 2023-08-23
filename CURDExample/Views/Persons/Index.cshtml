@@ -3,7 +3,7 @@
     ViewBag.Title = "Persons";
 }
 
-<form action="~/persons/index" method="get">
+<form asp-controller="Persons" asp-action="Index" method="get">
     <h1>Persons</h1>
 
     <div class="box flex">
@@ -29,7 +29,7 @@
         </div>
         <div class="flex-1">
             <button class="button button-blue-black">Search</button>
-            <a href="~/persons/index" class="link-hover">ClearAll</a>
+            <a asp-controller="persons" asp-action="index" class="link-hover">ClearAll</a>
         </div>
     </div>
 
@@ -37,41 +37,41 @@
 
         <thead>
             <tr>
-                @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
-           {
-               {"ColumnName",nameof(PersonResponse.PersonName) },
-               {"DisplayName", "Person Name" }
-           })
+                    @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
+                {
+                    {"ColumnName",nameof(PersonResponse.PersonName) },
+                    {"DisplayName", "Person Name" }
+                })
 
 
-                @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
+                    @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
+                {
+                    {"ColumnName",nameof(PersonResponse.Email) },
+                    {"DisplayName", "Email" }
+                })
+
+                    @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
             {
-                {"ColumnName",nameof(PersonResponse.Email) },
-                {"DisplayName", "Email" }
+                {"ColumnName",nameof(PersonResponse.DateOfBirth) },
+                {"DisplayName", "Date Of Birth" }
             })
 
-                @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
-       {
-           {"ColumnName",nameof(PersonResponse.DateOfBirth) },
-           {"DisplayName", "Date Of Birth" }
-       })
+                    @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
+            {
+                {"ColumnName",nameof(PersonResponse.Gender) },
+                {"DisplayName", "Gender" }
+            })
+                    @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
+        {
+            {"ColumnName",nameof(PersonResponse.Age) },
+            {"DisplayName", "Age" }
+        })
 
-                @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
-       {
-           {"ColumnName",nameof(PersonResponse.Gender) },
-           {"DisplayName", "Gender" }
-       })
-                @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
-  {
-      {"ColumnName",nameof(PersonResponse.Age) },
-      {"DisplayName", "Age" }
-  })
-
-                @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
-       {
-           {"ColumnName",nameof(PersonResponse.Address) },
-           {"DisplayName", "Address" }
-       })
+                    @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
+            {
+                {"ColumnName",nameof(PersonResponse.Address) },
+                {"DisplayName", "Address" }
+            })
 
                 @await Html.PartialAsync("_GridColumnHeader", new ViewDataDictionary(ViewData)
        {
@@ -98,6 +98,14 @@
                     <td style="width:15%">@person.Address</td>
                     <td style="width:15%">@person.Country</td>
                     <td style="width:15%">@person.ReceiveNewsLetters</td>
+                    <td style="width:15%">
+                        <a asp-controller="persons" asp-action="Update"
+                           asp-route-personId="@person.PersonId">Edit</a>
+                    </td>
+                    <td style="width:15%">
+                        <a asp-controller="persons" asp-action="Delete"
+                           asp-route-personId="@person.PersonId">Delete</a>
+                    </td>
                 </tr>
             }
 

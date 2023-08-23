@@ -249,10 +249,9 @@
     align-content: stretch;
     align-items: stretch;
 }
-
-    .flex > div {
-        padding: 15px;
-    }
+.flex > div {
+    padding: 15px;
+}
 
 .flex-1 {
     flex: 1 auto;
