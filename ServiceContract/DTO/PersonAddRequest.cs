@@ -10,17 +10,20 @@ namespace ServiceContract.DTO
     /// </summary>
 	public class PersonAddRequest
 	{
-        [Required(ErrorMessage ="person Name can not blabk")]
+        [Required(ErrorMessage ="person Name can not blank")]
         public string? PersonName { get; set; }
 
-        [Required(ErrorMessage = "person Email can not blabk")]
+        [Required(ErrorMessage = "person Email can not blank")]
         [EmailAddress(ErrorMessage = "Email Value should be a valid email")]
+        [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime? DateOfBirth { get; set; }
 
         public GenderOptions? Gender { get; set; }
 
+        [Required(ErrorMessage ="select valid Country")]
         public Guid? CountryId { get; set; }
 
         public string? Address { get; set; }

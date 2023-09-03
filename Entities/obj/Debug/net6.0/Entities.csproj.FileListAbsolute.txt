@@ -10,3 +10,5 @@
 /Users/snehal/Projects/Learning_Projects/Entities/obj/Debug/net6.0/refint/Entities.dll
 /Users/snehal/Projects/Learning_Projects/Entities/obj/Debug/net6.0/Entities.pdb
 /Users/snehal/Projects/Learning_Projects/Entities/obj/Debug/net6.0/ref/Entities.dll
+/Users/snehal/Projects/Learning_Projects/Entities/bin/Debug/net6.0/Entities.runtimeconfig.json
+/Users/snehal/Projects/Learning_Projects/Entities/obj/Debug/net6.0/Entities.genruntimeconfig.cache

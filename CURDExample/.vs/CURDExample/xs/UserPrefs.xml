@@ -1,25 +1,19 @@
 ﻿<Properties StartupConfiguration="{769F6868-0B6B-44CF-8F57-AA4C521741C0}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.CRUDTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.EmployeeApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Persons/Delete.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PersonsController.cs">
     <Files>
-      <File FileName="Program.cs" Line="9" Column="64" />
+      <File FileName="Program.cs" />
       <File FileName="Controllers/PersonsController.cs" Line="126" Column="1" />
-      <File FileName="Views/Persons/Index.cshtml" Line="107" Column="72" />
-      <File FileName="Views/Persons/Create.cshtml" Line="128" Column="19" />
-      <File FileName="../ServiceContract/DTO/PersonAddRequest.cs" Line="20" Column="1" />
-      <File FileName="Views/_ViewImports.cshtml" Line="3" Column="43" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="16" Column="34" />
-      <File FileName="wwwroot/jquery.min.js" Line="7" Column="1" />
-      <File FileName="Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Persons/Edit.cshtml" Line="10" Column="1" />
-      <File FileName="../Services/PersonService.cs" Line="174" Column="1" />
+      <File FileName="Views/Persons/Index.cshtml" />
+      <File FileName="Views/Persons/Create.cshtml" />
+      <File FileName="../ServiceContract/DTO/PersonAddRequest.cs" />
+      <File FileName="Views/_ViewImports.cshtml" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="wwwroot/jquery.min.js" />
+      <File FileName="Views/_ViewStart.cshtml" />
+      <File FileName="../Services/PersonService.cs" />
       <File FileName="Views/Persons/Delete.cshtml" Line="17" Column="31" />
     </Files>
     <Pads>
@@ -27,11 +21,11 @@
         <State name="__root__">
           <Node name="CURDExample" expanded="True">
             <Node name="EmployeeApplication" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PersonsController.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Persons" expanded="True">
-                  <Node name="Delete.cshtml" selected="True" />
-                </Node>
+                <Node name="Persons" expanded="True" />
               </Node>
             </Node>
             <Node name="ServiceContract" expanded="True">
@@ -41,14 +35,11 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="CURDExample" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EmployeeApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
