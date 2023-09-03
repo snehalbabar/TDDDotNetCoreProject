@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //add services into IoC container
-builder.Services.AddSingleton<ICountryService, CountriesService>();
-builder.Services.AddSingleton<IPersonService, PersonService>();
+builder.Services.AddScoped<ICountryService, CountriesService>();
+builder.Services.AddScoped<IPersonService, PersonService>();
 
 builder.Services.AddDbContext<PersonsDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));

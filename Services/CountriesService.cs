@@ -1,4 +1,5 @@
 ﻿ using Entities;
+using Microsoft.EntityFrameworkCore;
 using ServiceContract;
 using ServiceContract.DTO;
 
@@ -8,43 +9,12 @@ namespace Services;
 public class CountriesService : ICountryService
 {
     //private list
-    private readonly List<Country> _countries;
+    private readonly PersonsDbContext _db;
 
-    public CountriesService(bool initialize = true)
+    public CountriesService(PersonsDbContext  personsDbContext)
     {
-        _countries = new List<Country>();
-        if (initialize)
-        {
-            _countries.AddRange(new List<Country>() {
-            new Country() {
-                CountryId = Guid.Parse("e098d035-94d4-4119-88a4-3f5ff6e54680"),
-                CountryName = "USA"
-            },
-            new Country()
-            {
-                CountryId = Guid.Parse("68d84e65-555f-48a2-9840-436b5c695b14"),
-                CountryName = "India"
-            },
-            new Country()
-            {
-                CountryId = Guid.Parse("ffd39392-fe23-4ec0-955e-130f5f3ad192"),
-                CountryName = "japan"
-            },
-            new Country()
-            {
-                CountryId = Guid.Parse("9baa4486-82d7-4037-b4f1-3b83111d8213"),
-                CountryName = "Korea"
-            },
-            new Country()
-            {
-                CountryId = Guid.Parse("2b2fc077-39f8-4339-9e7c-134af028f10f"),
-                CountryName = "Germany"
-            },
-
-            });
-
-
-        }
+        _db = personsDbContext;
+        
     }
 
     public CountryResponse AddCountry(CountryAddRequest? countryAddRequest)
@@ -64,8 +34,8 @@ public class CountriesService : ICountryService
             throw new ArgumentException(nameof(countryAddRequest));
         }
 
-        //validation: duplicate country name is not allowed
-        if (_countries.Where(x => x.CountryName == countryAddRequest.CountryName).Count() > 0)
+    //validation: duplicate country name is not allowed
+        if (_db.Countries.Count(x => x.CountryName == countryAddRequest.CountryName) > 0)
         {
             throw new ArgumentException("Country Name Already Exsist");
         }
@@ -77,7 +47,8 @@ public class CountriesService : ICountryService
 
 
         // 5.Add into our data source (typicalliy in database using EF) For this example in list
-        _countries.Add(country);
+        _db.Countries.Add(country);
+        _db.SaveChanges();
 
 
         // 6.return CountryResponse object with CountryID
@@ -88,8 +59,8 @@ public class CountriesService : ICountryService
     public List<CountryResponse> GetAllCountries()
     {
         //convert all countires form country type to CountryResponse
-          return  _countries.Select(x => x.ToCountryResponse()).ToList();
-
+        
+        return _db.Countries.Select(x => x.ToCountryResponse()).ToList();
         //Return all CountryResponse Object
        
     }
@@ -103,7 +74,7 @@ public class CountriesService : ICountryService
         }
 
         //2. get matching country from List<Country> Based countryId
-        Country? countryObj = _countries.FirstOrDefault(x => x.CountryId == countryId);
+        Country? countryObj = _db.Countries.FirstOrDefault(x => x.CountryId == countryId);
 
         if (countryObj == null)
             return null;
